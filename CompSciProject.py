@@ -6,7 +6,36 @@ group3=(" "," ")
 group4=(" "," ")
 group5=(" "," ")
 group6=(" "," ")
-choice=input("What people would you like to group together?")
+
+def grouping():
+    choice=input("What people would you like to group together?")
+    if choice=="Kate":
+        group=("Kate","Ben")
+        print("Kate will be grouped with Ben")
+    elif choice=="Ethan":
+        group=("Ethan","Alexandria")
+        print("Ethan will be grouped with Alexandria")
+    elif choice=="Ben":
+        group=("Ben","Kate")
+        print("Ben will be grouped with Kate")
+    elif choice=="Tom":
+        group=("Tom","Sarah")
+        print("Tom will be grouped with Sarah")
+    elif choice=="Sarah":
+        group=("Sarah","Tom")
+        print("Sarah will be grouped with Tom")
+    elif choice=="Alexandria":
+        group=("Alexandria","Ethan")
+        print("Alexandria will be grouped with Ethan")
+    print(group)    
+    grouping()
+
+
+
+
+grouping()
+
+"""
 
 if choice=="Kate":
     group1=("Kate","Ben")
@@ -107,3 +136,5 @@ elif choice=="Sarah":
     print("Sarah will be grouped with Tom")
 elif choice=="Alexandria":
     print("Alexandria will be grouped with Ethan")
+    
+"""
